@@ -1,4 +1,4 @@
-package gamePanels;
+package battleship.gamepanel;
 
 import javax.swing.JFrame;
 
