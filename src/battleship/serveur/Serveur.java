@@ -6,10 +6,12 @@ import java.net.Socket;
 public class Serveur {
 
 	public Serveur() {
+		
 		try {
 			// Ecoute du serveur
 			ServerSocket ss = new ServerSocket(1234);
-			System.out.println("Serveur en ecoute...");
+			System.out.println("Server is listening...");
+			
 			while(true) {
 				// un client se connecte
 				Socket socket=ss.accept();
@@ -21,6 +23,10 @@ public class Serveur {
 			System.err.println("Serveur : "+e.getMessage());
 		}
 	}
+	
+	
+	
+	
 	public static void main(String[] args) {
 		new Serveur();
 	}
