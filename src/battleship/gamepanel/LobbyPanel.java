@@ -9,7 +9,7 @@ public class LobbyPanel extends JFrame {
 	//TODO Constructeur de la fenètre
 	public LobbyPanel(){
 		//TODO Modifier le titre de la fenètre
-		setTitle("Wainting room : Find your opponent");
+		setTitle("Waiting room : Find your opponent");
 		//TODO Modifier la taille de ma fenètre
 		setSize(400,400);
 		//TODO Taille non modifiable par l'utilisateur
