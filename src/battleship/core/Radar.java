@@ -26,7 +26,7 @@ public class Radar
 		if(target != null)
 		{
 			Case[][] grid = monitoredSea.getGrid();
-			return grid[target.getY()][target.getX()].IsHit();
+			return grid[target.getY()][target.getX()].isHit();
 		}
 		return false;
 	}
@@ -49,8 +49,8 @@ public class Radar
 		{
 			Case [][] grid = monitoredSea.getGrid();
 			Case c = grid[target.getY()][target.getX()];
-			Ship s = c.getShip();
-			return c.isHit() == true && b != null && b.IsDown();
+			Ship s = c.getBoat();
+			return c.isHit() == true && s != null && s.isDown();
 		}
 		return false;
 	}

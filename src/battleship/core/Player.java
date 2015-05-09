@@ -16,7 +16,7 @@ public class Player
 		username = name;
 		numberOfShots = 0;
 		sea = new Grid();
-		fleet = new List<Ship>();
+		fleet = new List<Ship> (); 
 	}
 	
 	
