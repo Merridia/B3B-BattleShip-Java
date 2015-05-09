@@ -1,5 +1,6 @@
 package battleship.core;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Player 
@@ -16,7 +17,7 @@ public class Player
 		username = name;
 		numberOfShots = 0;
 		sea = new Grid();
-		fleet = new List<Ship> (); 
+		fleet = new LinkedList<Ship> ();
 	}
 	
 	
