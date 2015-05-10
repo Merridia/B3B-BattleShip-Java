@@ -1,3 +1,7 @@
+/**
+  * @author Romain
+ */
+
 package battleship.core;
 
 public class Ship 

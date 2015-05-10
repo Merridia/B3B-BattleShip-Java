@@ -1,3 +1,6 @@
+/**
+  * @author Jennifer
+ */
 package battleship.serveur;
 
 import java.io.BufferedReader;
@@ -6,15 +9,19 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import org.json.JSONObject;
 
+/** List of players connect to the serveur (with soccet or not) */
 public class ThreadServeur implements Runnable
 {
+	/** Membres */
 	private Socket socket;
+	/** Constructeur */
 	
 	public ThreadServeur(Socket sock) 
 	{
 		socket = sock;
 	}
 	
+	/** Methodes */
 	@Override
 	public void run() 
 	{
@@ -37,4 +44,6 @@ public class ThreadServeur implements Runnable
 			System.out.println("ThreadServeur : " + e.getMessage());
 		}
 	}
+	
+	/** Getter & Setter */
 }

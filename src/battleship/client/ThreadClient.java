@@ -1,3 +1,7 @@
+/**
+  * @author Jennifer
+ */
+
 package battleship.client;
 
 import java.io.BufferedReader;
@@ -16,7 +20,7 @@ public class ThreadClient extends Thread {
 	public Socket connection;
 	//Ajout d'un compteur
 	public int counter = 1;
-	//Création d"object systeme
+	//Création d'object systeme
 	public PrintWriter opt;
 	public BufferedReader ipt;
 	//Définition du socket

@@ -1,3 +1,6 @@
+/**
+  * @author Romain
+ */
 package battleship.frame;
 
 import javax.swing.JFrame;

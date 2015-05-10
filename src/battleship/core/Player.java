@@ -1,3 +1,6 @@
+/**
+  * @author Romain
+ */
 package battleship.core;
 
 import java.util.LinkedList;

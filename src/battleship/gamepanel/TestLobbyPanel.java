@@ -1,9 +1,17 @@
+/**
+  * @author Jennifer
+ */
 package battleship.gamepanel;
-
 
 public class TestLobbyPanel {
 	//TODO Instancier la JFrame Lobby
 	LobbyPanel myLobby = new LobbyPanel();
-	//TODO Afficher mon lobby
 	
+void main_MyLobby() {
+	//TODO Afficher mon lobby
+	myLobby.setVisible(true);
 }
+
+}
+
+

@@ -1,4 +1,8 @@
-package battleship.serveur;
+/**
+  * @author Jennifer
+ */
+
+package battleship.client;
 
 import java.util.UUID;
 import java.util.ArrayList;
@@ -24,7 +28,13 @@ public class IDGenerator {
 	        return idGenerate;
 	    }
 	
-	public static void destroyeID(String userId){
-		UsedID.remove(userId);
+	public static void destroyeID(String user){
+		
+		if (UsedID.isEmpty()){
+			System.err.println("No Client registred in this list");
+		}
+		else
+		UsedID.remove(user);
 	}
+	
 }
