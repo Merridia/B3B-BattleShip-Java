@@ -1,5 +1,6 @@
 /**
   * @author Jennifer
+  * @author Romain
  */
 package battleship.serveur;
 

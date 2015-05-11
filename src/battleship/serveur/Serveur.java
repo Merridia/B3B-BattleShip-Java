@@ -1,10 +1,13 @@
 /**
   * @author Jennifer
+  * @author Romain
  */
 package battleship.serveur;
 
 import java.net.ServerSocket;
 import java.net.Socket;
+
+import java.util.LinkedList;
 
 /** import from the project */
 import battleship.client.Users;
@@ -12,8 +15,8 @@ import battleship.client.Users;
 /** Objectifs of the class */
 public class Serveur {
 	/** Membres */
-	public PlayersIn playerList;
 	private ServerSocket ss;
+	private LinkedList<PlayersIn> listPlayerIn;
 	
 	/** Constructeur */
 	public Serveur() {
@@ -27,7 +30,7 @@ public class Serveur {
 				Socket socket = ss.accept();
 				System.out.println("A client is connect !");
 				
-				new Thread(new ThreadServeur(socket)).start();
+				new Thread(new ThreadServeur(socket, listPlayerIn)).start();
 				
 			}
 

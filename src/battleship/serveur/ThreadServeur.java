@@ -1,5 +1,6 @@
 /**
   * @author Jennifer
+  * @author Romain
  */
 package battleship.serveur;
 
@@ -7,6 +8,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.LinkedList;
+
 import org.json.JSONObject;
 
 /** List of players connect to the serveur (with soccet or not) */
@@ -14,11 +17,13 @@ public class ThreadServeur implements Runnable
 {
 	/** Membres */
 	private Socket socket;
+	private LinkedList<PlayersIn> ListOfPlayers;
 	/** Constructeur */
 	
-	public ThreadServeur(Socket sock) 
+	public ThreadServeur(Socket sock, LinkedList<PlayersIn> listplayer) 
 	{
 		socket = sock;
+		ListOfPlayers = listplayer;
 	}
 	
 	/** Methodes */
