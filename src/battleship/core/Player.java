@@ -14,6 +14,7 @@ public class Player
 	private Grid sea;
 	private List<Ship> fleet;
 	private Contact target;
+	private boolean ready;
 	
 	public Player (String name)
 	{
@@ -21,6 +22,7 @@ public class Player
 		numberOfShots = 0;
 		sea = new Grid();
 		fleet = new LinkedList<Ship> ();
+		ready = false;
 	}
 	
 	
@@ -82,6 +84,17 @@ public class Player
 	public void setTarget(Contact target) {
 		this.target = target;
 	}
+	
+
+	public boolean isReady() {
+		return ready;
+	}
+
+
+	public void setReady(boolean ready) {
+		this.ready = ready;
+	}
+
 
 	// Récupère la grille de l'ennemy
 	public void init (Radar ennemyGrid) throws NullPointerException
@@ -104,6 +117,11 @@ public class Player
 	public Case getCase(Contact target)
 	{
 		return getSea().getSea()[target.getY()][target.getX()];
+	}
+	
+	public void Imready ()
+	{
+		ready = !ready;
 	}
 	
 	

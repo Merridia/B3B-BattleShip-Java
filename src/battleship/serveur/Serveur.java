@@ -40,6 +40,11 @@ public class Serveur {
 		}
 	}
 	
+	public void close() throws Exception
+	{
+		ss.close();
+	}
+	
 	/** Methodes */
 	//TODO Ajouter la liste des clients et des threads créer ici:
 	public void savePlayerIn(Users thePlayer, Socket ss){

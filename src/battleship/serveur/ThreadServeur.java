@@ -20,6 +20,8 @@ public class ThreadServeur implements Runnable
 	/** Membres */
 	private Socket socket;
 	private Controller control;
+	private PrintWriter out;
+	private BufferedReader  in;
 	/** Constructeur */
 	
 	public ThreadServeur(Socket sock) 
@@ -37,8 +39,8 @@ public class ThreadServeur implements Runnable
 		try
 		{
 			// flux d'ecriture et de lecture
-			PrintWriter out=new PrintWriter(socket.getOutputStream(), true);
-			BufferedReader in=new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			out = new PrintWriter(socket.getOutputStream(), true);
+			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			
 			// boucle infinie
 			while(true)
@@ -52,6 +54,13 @@ public class ThreadServeur implements Runnable
 		{
 			System.out.println("ThreadServeur : " + e.getMessage());
 		}
+	}
+	
+	public void close () throws Exception
+	{
+		out.close();
+		in.close();
+		socket.close();
 	}
 	
 	/** Getter & Setter */
