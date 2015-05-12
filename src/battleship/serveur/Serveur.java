@@ -16,21 +16,22 @@ import battleship.client.Users;
 public class Serveur {
 	/** Membres */
 	private ServerSocket ss;
-	private LinkedList<PlayersIn> listPlayerIn;
 	
 	/** Constructeur */
-	public Serveur() {
-		
+	public Serveur() 
+	{
 		try {
 			ss = new ServerSocket(1234);
 			System.out.println("Server is listening...");
 			
-			while(true) {
+			while(true) 
+			{
 				// un client se connecte
 				Socket socket = ss.accept();
 				System.out.println("A client is connect !");
-				
-				new Thread(new ThreadServeur(socket, listPlayerIn)).start();
+				ThreadServeur ts=new ThreadServeur(socket);
+				System.out.println("Thread serveur instancié");
+				new Thread(ts).start();
 				
 			}
 

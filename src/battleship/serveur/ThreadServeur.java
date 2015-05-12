@@ -19,15 +19,15 @@ public class ThreadServeur implements Runnable
 {
 	/** Membres */
 	private Socket socket;
-	private LinkedList<PlayersIn> ListOfPlayers;
-	private Controller controller;
+	private Controller control;
 	/** Constructeur */
 	
-	public ThreadServeur(Socket sock, LinkedList<PlayersIn> listplayer) 
+	public ThreadServeur(Socket sock) 
 	{
 		socket = sock;
-		ListOfPlayers = listplayer;
-		controller = new Controller();
+		System.out.println("Je crée le contrôleur");
+		control = new Controller();
+		System.out.println("Contrôleur créé");
 	}
 	
 	/** Methodes */

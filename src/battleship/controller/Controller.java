@@ -11,7 +11,10 @@ public class Controller
 	
 	public Controller()
 	{
+		System.out.println("Je vais créer le frameconnect");
 		frameConnect = new ConnectMenuFrame();
-		frameConnect.setVisibility(true);
+		System.out.println("frameConnect créé");
+		frameConnect.setVisible(true);
+		System.out.println("frameconnect visible");
 	}
 }

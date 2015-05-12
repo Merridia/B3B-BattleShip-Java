@@ -15,8 +15,16 @@ public class ConnectMenuFrame extends JFrame
 	
 	public ConnectMenuFrame ()
 	{
+		System.out.println("Je vais créer le connect panel");
+		panelConnect = new ConnectPanel(this);
+		System.out.println("connectpanel créé");
 		setTitle("Batlleship Connection");
 		setSize(900, 600);
+		System.out.println("Je vais ajouter "+panelConnect);
 		add(panelConnect);
+
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		System.out.println("panelConnect ajouté");
+		setVisible(true);
 	}
 }
