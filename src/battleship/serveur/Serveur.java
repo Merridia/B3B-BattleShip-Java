@@ -1,13 +1,12 @@
 /**
-  * @author Jennifer
-  * @author Romain
+  * @author Jennifer & Romain
  */
 package battleship.serveur;
 
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import java.util.LinkedList;
+//import java.util.LinkedList;
 
 /** import from the project */
 import battleship.client.Users;

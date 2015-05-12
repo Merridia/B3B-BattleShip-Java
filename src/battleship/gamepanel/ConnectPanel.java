@@ -6,14 +6,14 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JFrame;
+//import javax.swing.JFrame;
 import javax.swing.JPanel;
 //import java.util.ArrayList;
 import javax.swing.JTextField;
 
-import battleship.client.Users;
+//import battleship.client.Users;
 import battleship.frame.ConnectMenuFrame;
-import battleship.serveur.PlayersIn;
+//import battleship.serveur.PlayersIn;
 
 public class ConnectPanel extends JPanel implements ActionListener{
 	
@@ -53,8 +53,8 @@ public class ConnectPanel extends JPanel implements ActionListener{
 		//TODO Ajouter le contenus à la fenètre.
 		ConnectToServ.add(welcom, BorderLayout.PAGE_START);
 		//Saisi de l'id
-		ConnectToServ.add(l_EnterName,BorderLayout.EAST);
-		ConnectToServ.add(TF_username,BorderLayout.WEST);
+		ConnectToServ.add(l_EnterName);
+		ConnectToServ.add(TF_username);
 		//Bouton join
 		ConnectToServ.add(l_jjs, BorderLayout.SOUTH);
 		ConnectToServ.add(joinServer, BorderLayout.LINE_END);

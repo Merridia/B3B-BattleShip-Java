@@ -4,7 +4,7 @@
 package battleship.frame;
 
 import javax.swing.JFrame;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT;
+//import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT;
 
 import battleship.controller.Controller;
 

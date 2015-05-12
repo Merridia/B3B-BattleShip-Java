@@ -1,6 +1,5 @@
 /**
-  * @author Jennifer
-  * @author Romain
+  * @author Jennifer & Romain
  */
 package battleship.serveur;
 
@@ -8,7 +7,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.util.LinkedList;
+//import java.util.LinkedList;
+
 
 import org.json.JSONObject;
 
@@ -19,6 +19,7 @@ public class ThreadServeur implements Runnable
 {
 	/** Membres */
 	private Socket socket;
+	@SuppressWarnings("unused")
 	private Controller control;
 	private PrintWriter out;
 	private BufferedReader  in;
