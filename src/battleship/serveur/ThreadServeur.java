@@ -12,18 +12,22 @@ import java.util.LinkedList;
 
 import org.json.JSONObject;
 
+import battleship.controller.Controller;
+
 /** List of players connect to the serveur (with soccet or not) */
 public class ThreadServeur implements Runnable
 {
 	/** Membres */
 	private Socket socket;
 	private LinkedList<PlayersIn> ListOfPlayers;
+	private Controller controller;
 	/** Constructeur */
 	
 	public ThreadServeur(Socket sock, LinkedList<PlayersIn> listplayer) 
 	{
 		socket = sock;
 		ListOfPlayers = listplayer;
+		controller = new Controller();
 	}
 	
 	/** Methodes */
