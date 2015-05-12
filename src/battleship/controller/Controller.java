@@ -4,7 +4,7 @@
 package battleship.controller;
 
 import battleship.frame.*;
-import battleship.gamepanel.LobbyPanel;
+//import battleship.gamepanel.LobbyPanel;
 
 public class Controller 
 {

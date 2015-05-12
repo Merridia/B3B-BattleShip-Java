@@ -7,5 +7,6 @@ import javax.swing.JFrame;
 
 public class GameFrame extends JFrame
 {
+	static final long serialVersionUID=0;
 
 }

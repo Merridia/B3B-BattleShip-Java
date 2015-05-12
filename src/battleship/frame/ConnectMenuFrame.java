@@ -5,7 +5,7 @@ package battleship.frame;
 
 import javax.swing.JFrame;
 
-import battleship.gamepanel.*;
+//import battleship.gamepanel.*;
 
 public class ConnectMenuFrame extends JFrame
 {
@@ -16,10 +16,10 @@ public class ConnectMenuFrame extends JFrame
 	public ConnectMenuFrame ()
 	{
 		System.out.println("Je vais créer le connect panel");
-		panelConnect = new ConnectPanel(this);
+		panelConnect = new ConnectPanel();
 		System.out.println("connectpanel créé");
 		setTitle("Batlleship Connection");
-		setSize(900, 600);
+		setSize(400, 400);
 		System.out.println("Je vais ajouter "+panelConnect);
 		add(panelConnect);
 
