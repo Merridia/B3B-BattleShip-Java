@@ -20,11 +20,12 @@ import battleship.client.Users;
 public class LobbyPanel extends JFrame {
 	
 	static final long serialVersionUID=0;
-	/** Constructeur de la fenètre*/
+	/** Membres */
 	//Récupérer la liste des playersIn (serveur)
 	public PlayersIn P_ingame;
 	public Users player1 = new Users("Test1","Thread1");
 	
+	/** Constructeur de la fenètre*/
 	LobbyPanel(){	
 		//TODO Modifier le titre de la fenètre
 		setTitle("Waiting room : Find your opponent");
