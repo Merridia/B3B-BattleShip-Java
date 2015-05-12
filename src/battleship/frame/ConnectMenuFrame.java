@@ -9,7 +9,9 @@ import battleship.gamepanel.*;
 
 public class ConnectMenuFrame extends JFrame
 {
-	private Connectpanel panelConnect;
+	static final long serialVersionUID=0;
+	
+	private ConnectPanel panelConnect;
 	
 	public ConnectMenuFrame ()
 	{
