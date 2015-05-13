@@ -5,6 +5,8 @@ package battleship.frame;
 
 import javax.swing.JFrame;
 
+import battleship.gamepanel.ConnectPanel;
+
 //import battleship.gamepanel.*;
 
 public class ConnectMenuFrame extends JFrame
